@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #054760;
+  line-height: 40px;
+  padding:10px;
+}
+
+a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+/* Style the header */
+header {
+  background-color: #0085ba;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+header img{
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  float: left;
+  padding: 5px;
+  margin:15px; 
+}
+
+header img:hover{
+  border-radius: 100px;
+  border: 3px solid #fff;
+  box-shadow:  0px 0px 30px 0px rgba(255, 255, 255, 0.67);
+}
+
+p{
+  line-height: 1.5em;
+  text-align: left;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #656565;
+}
+
+footer p{
+  text-align: center;
+  color: #fff;
+}
+
+.logintext{
+  font-size: 15px;
+  color: #fff;
+  float: right;
+  margin-right: 30px;
+}
+.logintext a{
+  text-decoration: none;
+  color: #fff;
+}
+.logintext a:hover{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+
+
+.main{
+	width: 100%;
+	/*font-family: times new roman;*/
+	background-color:#000;
+}
+
+
+
+/* Create two columns/boxes that floats next to each other */
+.nav {
+  float: left;
+  width: 30%;
+  height: 1700px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Style the list inside the menu */
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.nav ul li:before {
+		content: "\00BB";
+
+		/*border-right: 2px solid black;
+		border-bottom: 2px solid black;
+		width: 10px;
+		height: 10px;
+		transform: rotate(-45deg);
+		content: "";
+		display: inline-block;
+		margin-right: 5px;*/
+
+
+
+}
+
+.content {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 1700px;  /*only for demonstration, should be removed */
+  overflow: hidden;
+}
+
+
+.profile{
+	text-align: center;
+}
+.profile h2{
+	padding-top: 20px;
+}
+
+.profile img{
+  width: 100%;
+  height: auto;
+  border: 5px solid #fff;
+  object-fit: cover;
+}
+
+form {                     
+  /*margin: 0 auto; */
+  width: 100%; 
+}
+
+
+input[type=text],input[type=password]select, textarea {
+    width: 100%;
+    padding: 5px 6px;
+    margin: 15px 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.article_pg{
+    border: 1px solid #a8a6a6;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.article_pg .img_holder{
+  float: left;
+}
+
+.article_pg .img_holder img{
+  width: 220px;
+  height: 120px;
+}
+
+.article_pg .article_box{
+  float: left;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.article_pg h3{
+  color: #0185BA;
+}
+
+/* Style the footer */
+footer {
+  background-color: #044a66;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+footer a{
+	color:#fff;
+}
+
+.information{
+	color: #080;
+}
+
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  .nav, .content {
+    width: 100%;
+    height: auto;
+  }
+}
